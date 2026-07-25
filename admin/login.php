@@ -1,7 +1,10 @@
 <?php
-session_start();
-require_once __DIR__ . '/../config/db.php';
-require_once __DIR__ . '/../includes/functions.php';
+
+$basePath = __DIR__ . '/../';
+
+require_once $basePath . 'config/db.php';
+require_once $basePath . 'includes/functions.php';
+
 
 // If already logged in, go straight to the dashboard
 //when running use php -S localhost:8001
@@ -39,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $page_title = 'Librarian Login';
-require_once __DIR__ . '/../includes/header.php';
+require_once $basePath. '/../includes/header.php';
 ?>
 
 <div class="container" style="max-width:420px; margin-top:60px;">
