@@ -69,4 +69,4 @@ require_once $basePath. '/../includes/header.php';
     </div>
 </div>
 
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+<?php require_once $basePath. '/../includes/footer.php'; ?>
