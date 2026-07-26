@@ -29,12 +29,11 @@ and Bootstrap 5 for a responsive UI.
 
 ## Setup (XAMPP)
 
-1. Copy the `library_system` folder into your XAMPP `htdocs` directory.
-2. Start Apache and MySQL from the XAMPP control panel.
-3. Open **phpMyAdmin** (`http://localhost/phpmyadmin`), create a database, then import `sql/schema.sql`
+1. Start Apache and MySQL from the XAMPP control panel.
+2. Open **phpMyAdmin** (`http://localhost/phpmyadmin`), create a database, then import `sql/schema.sql`
    (or run: `mysql -u root -p < sql/schema.sql`). This also creates the default admin account and 3 sample books.
-4. Make sure the `uploads/` folder is writable (it already exists in this package).
-5. Visit `http://localhost/library_system/` for the public site,
+3. Make sure the `uploads/` folder is writable (it already exists in this package).
+4. Visit `http://localhost/library_system/` for the public site,
    or `http://localhost/library_system/admin/login.php` for the librarian login.
 
 **Default admin login:** `admin` / `admin123`
