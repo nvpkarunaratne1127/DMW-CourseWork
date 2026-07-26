@@ -60,7 +60,7 @@ library_system/
 └── reserve.php          # public reservation form
 ```
 
-## Notes for your submission
+## Notes
 
 - All SQL queries use prepared statements (`mysqli::prepare`) to prevent SQL injection.
 - Passwords are hashed with bcrypt (`password_hash`), never stored in plain text.
