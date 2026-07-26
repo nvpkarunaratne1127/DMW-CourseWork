@@ -55,9 +55,15 @@ CREATE TABLE IF NOT EXISTS reservations (
 );
 
 -- ---------------------------------------------
--- Sample data (optional - feel free to delete)
+-- Sample data (optional)
 -- ---------------------------------------------
-INSERT INTO books (title, author, isbn, genre, total_copies, available_copies) VALUES
-('The Great Gatsby', 'F. Scott Fitzgerald', '9780743273565', 'Fiction', 3, 3),
-('Clean Code', 'Robert C. Martin', '9780132350884', 'Technology', 2, 2),
-('A Brief History of Time', 'Stephen Hawking', '9780553380163', 'Science', 4, 4);
+INSERT INTO books (title, author, isbn, genre, total_copies, available_copies, cover_image) VALUES
+('Under the Whispering Door','T.J. Klune','9781250838148','Fiction',3,2,'book_6a643ecbe0392.jpg'),
+('The Disappearing Spoon','Sam Kean','9780316051637','Science',2,1,'book_6a6441b45df91.jpg'),
+('Clean Code','Robert Cecil Martin','9780135398524','Technology',5,3,'book_6a6445c2cba4d.jpg'),
+('The Silent Patient','Alex Michaelides','9781250230782','Fiction',4,2,'book_6a64354aa17e5.jpg'),
+('The Demon Haunted World','Carl Edward Sagan, Ann Druyan','9780307801043','Science',3,1,'book_6a64439c626b3.jpg'),
+('The Selfish Gene','Richard Dawkins','9780191537554','Science',2,2,'book_6a644238da288.jpg'),
+('CODE: The Hidden Language of Computer Hardware and Software (Second Edition)','Charles Petzold','9780137909100','Technology',6,2,'book_6a6444495dc00.jpg'),
+('Learning PHP, MySQL & JavaScript','Robin Nixon','9781098152314','Technology',5,0,'book_6a6448279d523.jpg'),
+('Crime and Punishment','Fyodor Dostoevsky','9783863523756','Fiction',8,3,'book_6a643941352cb.jpg');
