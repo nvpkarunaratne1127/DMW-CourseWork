@@ -66,9 +66,21 @@ require_once __DIR__ . '/../includes/navbar_admin.php';
                         </span>
                     </td>
                     <td class="text-nowrap">
-                        <a href="book_reservations.php?id=<?php echo (int)$b['id']; ?>" class="btn btn-sm btn-outline-secondary" title="View Reservations"><i class="bi bi-eye"></i></a>
-                        <a href="edit_book.php?id=<?php echo (int)$b['id']; ?>" class="btn btn-sm btn-outline-primary" title="Edit"><i class="bi bi-pencil"></i></a>
-                        <a href="delete_book.php?id=<?php echo (int)$b['id']; ?>" class="btn btn-sm btn-outline-danger" title="Delete" onclick="return confirm('Delete this book? This cannot be undone.');"><i class="bi bi-trash"></i></a>
+                        <a href="book_reservations.php?id=<?php echo (int)$b['id']; ?>" 
+                            class="btn btn-sm btn-outline-secondary">
+                            View Reservations
+                        </a>
+
+                        <a href="edit_book.php?id=<?php echo (int)$b['id']; ?>" 
+                            class="btn btn-sm btn-outline-primary">
+                            Edit
+                        </a>
+
+                        <a href="delete_book.php?id=<?php echo (int)$b['id']; ?>" 
+                            class="btn btn-sm btn-outline-danger"  
+                            onclick="return confirm('Delete this book? This cannot be undone.');">
+                            Delete
+                        </a>
                     </td>
                 </tr>
             <?php endwhile; ?>
