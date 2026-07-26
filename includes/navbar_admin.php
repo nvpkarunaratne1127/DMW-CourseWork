@@ -5,13 +5,25 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="dashboard.php">Dashboard</a></li>
-        <li class="nav-item"><a class="nav-link" href="books.php">Manage Books</a></li>
-        <li class="nav-item"><a class="nav-link" href="reservations.php">Reservations</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.php" target="_blank">View Public Site</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="logout.php">Logout (<?php echo e($_SESSION['admin_username'] ?? ''); ?>)</a></li>
-      </ul>
+        <ul class="navbar-nav ms-auto d-flex gap-2">
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="dashboard.php">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="books.php">Manage Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="reservations.php">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="../index.php" target="_blank">View Public Site</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-warning" href="logout.php">
+              Logout (<?php echo e($_SESSION['admin_username'] ?? ''); ?>)
+            </a>
+          </li>
+        </ul>
     </div>
   </div>
 </nav>
