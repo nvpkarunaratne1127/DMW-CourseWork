@@ -57,16 +57,29 @@ require_once $basePath. '/../includes/header.php';
             <div class="mb-3">
                 <label class="form-label">Username</label>
                 <input type="text" name="username" class="form-control" required autofocus>
+                <p class="text-muted small mt-3 text-center">Default: admin </p>
             </div>
             <div class="mb-3">
                 <label class="form-label">Password</label>
                 <input type="password" name="password" class="form-control" required>
+                <p class="text-muted small mt-3 text-center">Default: admin123</p>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <button type="submit" class="btn btn-primary w-100 login-btn">Login</button>
+                <style>
+                    .login-btn:hover {
+                    background-color: green;   
+                    border-color: green;      
+                    }
+                </style>
         </form>
-        <p class="text-muted small mt-3 text-center">Default: admin / admin123</p>
-        <a href="../index.php" class="small">&larr; Back to public site</a>
-    </div>
+        <br>
+        <a href="../index.php" class="btn btn-primary back-btn">Back to Public Page</a>
+                <style>
+                    .back-btn:hover { 
+                        background-color: red;
+                        border-color: red;      
+                    }
+                </style>
 </div>
 
 
