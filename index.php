@@ -103,5 +103,5 @@ require_once __DIR__ . '/includes/navbar_public.php';
         <?php endwhile; ?>
     </div>
 </div>
-
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>
 
