@@ -65,7 +65,7 @@ require_once __DIR__ . '/../includes/navbar_admin.php';
                             <?php echo (int)$b['available_copies']; ?> / <?php echo (int)$b['total_copies']; ?>
                         </span>
                     </td>
-                    <td class="text-nowrap">
+                                       <td class="text-nowrap">
                         <a href="book_reservations.php?id=<?php echo (int)$b['id']; ?>" 
                             class="btn btn-sm btn-outline-secondary">
                             View Reservations
