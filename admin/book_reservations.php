@@ -54,7 +54,7 @@ require_once __DIR__ . '/../includes/navbar_admin.php';
         </table>
         </div>
     </div>
-    <a href="books.php" class="btn btn-secondary mt-3">&larr; Back to Books</a>
+    <a href="books.php" class="btn btn-secondary mt-3"> Back to Main Page</a>
 </div>
 
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+
