@@ -1,10 +1,9 @@
 <?php
-
+session_start();
 $basePath = __DIR__ . '/../';
 
 require_once $basePath . 'config/db.php';
 require_once $basePath . 'includes/functions.php';
-
 
 // If already logged in, go straight to the dashboard
 //when running use php -S localhost:8001
@@ -42,12 +41,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $page_title = 'Librarian Login';
-require_once $basePath. '/../includes/header.php';
+require_once $basePath. 'includes/header.php';
 ?>
 
 <div class="container" style="max-width:420px; margin-top:60px;">
     <div class="card p-4">
-        <h4 class="mb-3 text-center"><i class="bi bi-shield-lock"></i> Librarian Login</h4>
+        <h4 class="mb-3 text-center"></i> Librarian Login</h4>
 
         <?php foreach ($errors as $err): ?>
             <div class="alert alert-danger"><?php echo e($err); ?></div>
@@ -62,7 +61,7 @@ require_once $basePath. '/../includes/header.php';
             <div class="mb-3">
                 <label class="form-label">Password</label>
                 <input type="password" name="password" class="form-control" required>
-                <p class="text-muted small mt-3 text-center">Default: admin123</p>
+                <p class="text-muted small mt-3 text-center">Default:admin123</p>
             </div>
             <button type="submit" class="btn btn-primary w-100 login-btn">Login</button>
                 <style>
@@ -80,6 +79,5 @@ require_once $basePath. '/../includes/header.php';
                         border-color: red;      
                     }
                 </style>
+    </div>
 </div>
-
-
