@@ -67,3 +67,49 @@ INSERT INTO books (title, author, isbn, genre, total_copies, available_copies, c
 ('CODE: The Hidden Language of Computer Hardware and Software (Second Edition)','Charles Petzold','9780137909100','Technology',6,2,'book_6a6444495dc00.jpg'),
 ('Learning PHP, MySQL & JavaScript','Robin Nixon','9781098152314','Technology',5,0,'book_6a6448279d523.jpg'),
 ('Crime and Punishment','Fyodor Dostoevsky','9783863523756','Fiction',8,3,'book_6a643941352cb.jpg');
+
+-- ---------------------------------------------
+-- Sample reservations
+-- ---------------------------------------------
+INSERT INTO reservations
+(book_id, student_name, telephone, request_date, return_date, status)
+VALUES
+
+-- Book 1 (1 reservation)
+(1, 'Nimal Perera', '0712345678', '2026-07-20', '2026-08-03', 'Reserved'),
+
+-- Book 2 (1 reservation)
+(2, 'Kumari Silva', '0723456789', '2026-07-21', '2026-08-04', 'Reserved'),
+
+-- Book 3 (2 reservations)
+(3, 'Sunil Fernando', '0774567890', '2026-07-18', '2026-08-01', 'Reserved'),
+(3, 'Dilani Jayasinghe', '0755678901', '2026-07-19', '2026-08-02', 'Reserved'),
+
+-- Book 4 (2 reservations)
+(4, 'Kasun Wijesinghe', '0766789012', '2026-07-17', '2026-07-31', 'Reserved'),
+(4, 'Tharushi Gunawardena', '0787890123', '2026-07-22', '2026-08-05', 'Reserved'),
+
+-- Book 5 (2 reservations)
+(5, 'Chamara Ranasinghe', '0708901234', '2026-07-16', '2026-07-30', 'Reserved'),
+(5, 'Ishara Samarasinghe', '0719012345', '2026-07-23', '2026-08-06', 'Reserved'),
+
+-- Book 7 (4 reservations)
+(7, 'Dinesh Karunaratne', '0720123456', '2026-07-15', '2026-07-29', 'Reserved'),
+(7, 'Anusha Ekanayake', '0771234567', '2026-07-18', '2026-08-01', 'Reserved'),
+(7, 'Roshan Abeysekera', '0752345678', '2026-07-20', '2026-08-03', 'Reserved'),
+(7, 'Sanduni Herath', '0763456789', '2026-07-22', '2026-08-05', 'Reserved'),
+
+-- Book 8 (5 reservations)
+(8, 'Pradeep Senanayake', '0784567890', '2026-07-14', '2026-07-28', 'Reserved'),
+(8, 'Nadeesha Wickramasinghe', '0705678901', '2026-07-15', '2026-07-29', 'Reserved'),
+(8, 'Mahesh Bandara', '0716789012', '2026-07-17', '2026-07-31', 'Reserved'),
+(8, 'Sachini Madushani', '0727890123', '2026-07-19', '2026-08-02', 'Reserved'),
+(8, 'Lakshan Peris', '0778901234', '2026-07-21', '2026-08-04', 'Reserved'),
+
+-- Book 9 (5 reservations)
+(9, 'Harsha Rajapaksha', '0759012345', '2026-07-13', '2026-07-27', 'Reserved'),
+(9, 'Udesh Jayawardena', '0760123456', '2026-07-14', '2026-07-28', 'Reserved'),
+(9, 'Thilini Fernando', '0781234567', '2026-07-16', '2026-07-30', 'Reserved'),
+(9, 'Gayan De Silva', '0702345678', '2026-07-18', '2026-08-01', 'Reserved'),
+(9, 'Malsha Perera', '0713456789', '2026-07-20', '2026-08-03', 'Reserved');
+
