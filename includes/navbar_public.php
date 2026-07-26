@@ -5,9 +5,13 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.php">Browse Books</a></li>
-        <li class="nav-item"><a class="nav-link" href="admin/login.php">Librarian Login</a></li>
+      <ul class="navbar-nav ms-auto d-flex gap-3">
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="index.php">Browse Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="admin/login.php">Librarian Login</a>
+        </li>
       </ul>
     </div>
   </div>
